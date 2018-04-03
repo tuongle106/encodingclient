@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class APIController {
-    String JSON_APPLICATION = "application/json";
+    private static final String JSON_APPLICATION = "application/json";
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
 
     @RequestMapping(value ="media/callback/notify", consumes = JSON_APPLICATION, produces = JSON_APPLICATION)
