@@ -7,4 +7,4 @@ management:
 
 logging:
     level:
-        com.linecorp.sample: DEBUG
+        com.linecorp.sample: INFO

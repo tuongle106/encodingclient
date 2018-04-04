@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/java/net/mbc/platform/vam/api/EncodingCallbackController.java">
           <value>
             <set />
