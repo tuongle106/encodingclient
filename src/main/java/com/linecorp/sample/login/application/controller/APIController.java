@@ -17,8 +17,8 @@ package com.linecorp.sample.login.application.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -26,19 +26,19 @@ public class APIController {
     private static final String JSON_APPLICATION = "application/x-www-form-urlencoded";
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
 
-    @RequestMapping(value = "media/callback/notify")
-    public void notifyCallback(@RequestBody Object notifyRequest) {
-        LOGGER.info("notifyCallback: {}", notifyRequest);
+    @PostMapping(value = "media/callback/notify")
+    public void notifyCallback(@RequestBody String json) {
+        LOGGER.info("notifyCallback: {}", json);
     }
 
-    @RequestMapping(value = "media/callback/error")
-    public void notifyCallbackError(@RequestBody Object notifyRequest) {
-        LOGGER.info("notifyCallbackError: {}", notifyRequest);
+    @PostMapping(value = "media/callback/error")
+    public void notifyCallbackError(@RequestBody String json) {
+        LOGGER.info("notifyCallbackError: {}", json);
     }
 
-    @RequestMapping(value = "media/callback/upload")
-    public void notifyCallbackUpload(@RequestBody Object notifyRequest) {
-        LOGGER.info("notifyCallbackUpload: {}", notifyRequest);
+    @PostMapping(value = "media/callback/upload")
+    public void notifyCallbackUpload(@RequestBody String json) {
+        LOGGER.info("notifyCallbackUpload: {}", json);
     }
 
 }
