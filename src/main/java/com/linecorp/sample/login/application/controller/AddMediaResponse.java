@@ -71,4 +71,17 @@ public class AddMediaResponse {
     public void setFormat(Map<String, Object> format) {
         this.format = format;
     }
+
+    @Override
+    public String toString() {
+        return "AddMediaResponse{" +
+                "mediaid='" + mediaid + '\'' +
+                ", source='" + source + '\'' +
+                ", status='" + status + '\'' +
+                ", description='" + description + '\'' +
+                ", taskId='" + taskId + '\'' +
+                ", outputParams='" + outputParams + '\'' +
+                ", format=" + format +
+                '}';
+    }
 }
