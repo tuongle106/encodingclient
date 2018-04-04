@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linecorp/sample/login/application/controller/EncodingResult.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/linecorp/sample/login/infra/line/api/v2/LineAPI.java">
           <value>
             <set />

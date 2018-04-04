@@ -27,17 +27,17 @@ public class APIController {
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
 
     @RequestMapping(value = "media/callback/notify")
-    public void notifyCallback(@RequestBody AddMediaResponse notifyRequest) {
+    public void notifyCallback(@RequestBody EncodingResult notifyRequest) {
         LOGGER.info("notifyCallback: {}", notifyRequest);
     }
 
     @RequestMapping(value = "media/callback/error")
-    public void notifyCallbackError(@RequestBody AddMediaResponse notifyRequest) {
+    public void notifyCallbackError(@RequestBody EncodingResult notifyRequest) {
         LOGGER.info("notifyCallbackError: {}", notifyRequest);
     }
 
     @RequestMapping(value = "media/callback/upload")
-    public void notifyCallbackUpload(@RequestBody AddMediaResponse notifyRequest) {
+    public void notifyCallbackUpload(@RequestBody EncodingResult notifyRequest) {
         LOGGER.info("notifyCallbackUpload: {}", notifyRequest);
     }
 
