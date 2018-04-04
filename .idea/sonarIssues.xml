@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linecorp/sample/login/application/controller/json.json">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/linecorp/sample/login/infra/line/api/v2/LineAPI.java">
           <value>
             <set />

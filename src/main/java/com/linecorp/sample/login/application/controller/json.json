@@ -1,0 +1,33 @@
+{
+  "result": {
+    "mediaid": "166112948",
+    "source": "https:\/\/vamvideos.s3.amazonaws.com\/2018\/02\/06\/step.mov",
+    "status": "Error",
+    "description": "No+tasks+are+completed",
+    "encodinghost": "http:\/\/manage.encoding.com\/",
+    "format": {
+      "taskid": "572462435",
+      "output": "advanced_hls",
+      "status": "Error",
+      "description": "ECOM00269:+Audio+extraction+failed",
+      "suggestion": "Our+decoder+could+not+extract+audio+stream+from+your+source+file.+"
+    }
+  }
+}
+
+{
+  "result": {
+    "mediaid": "166112948",
+    "source": "https:\/\/vamvideos.s3.amazonaws.com\/2018\/02\/06\/step.mov",
+    "status": "Error",
+    "description": "No+tasks+are+completed",
+    "encodinghost": "http:\/\/manage.encoding.com\/",
+    "format": {
+      "taskid": "572462435",
+      "output": "advanced_hls",
+      "status": "Error",
+      "description": "ECOM00269:+Audio+extraction+failed",
+      "suggestion": "Our+decoder+could+not+extract+audio+stream+from+your+source+file.+"
+    }
+  }
+}
