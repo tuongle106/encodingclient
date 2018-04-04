@@ -26,17 +26,17 @@ public class APIController {
     private static final String JSON_APPLICATION = "application/x-www-form-urlencoded";
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
 
-    @RequestMapping(value = "media/callback/notify", consumes = JSON_APPLICATION, produces = JSON_APPLICATION)
+    @RequestMapping(value = "media/callback/notify")
     public void notifyCallback(@RequestBody AddMediaResponse notifyRequest) {
         LOGGER.info("notifyCallback: {}", notifyRequest);
     }
 
-    @RequestMapping(value = "media/callback/error", consumes = JSON_APPLICATION)
+    @RequestMapping(value = "media/callback/error")
     public void notifyCallbackError(@RequestBody AddMediaResponse notifyRequest) {
         LOGGER.info("notifyCallbackError: {}", notifyRequest);
     }
 
-    @RequestMapping(value = "media/callback/upload", consumes = JSON_APPLICATION)
+    @RequestMapping(value = "media/callback/upload")
     public void notifyCallbackUpload(@RequestBody AddMediaResponse notifyRequest) {
         LOGGER.info("notifyCallbackUpload: {}", notifyRequest);
     }
