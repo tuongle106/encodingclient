@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class APIController {
-    private static final String JSON_APPLICATION = "application/json";
+    private static final String JSON_APPLICATION = "application/x-www-form-urlencoded";
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
 
     @RequestMapping(value = "media/callback/notify", consumes = JSON_APPLICATION, produces = JSON_APPLICATION)
@@ -31,12 +31,12 @@ public class APIController {
         LOGGER.info("notifyCallback: {}", notifyRequest);
     }
 
-    @RequestMapping(value = "media/callback/error", consumes = JSON_APPLICATION, produces = JSON_APPLICATION)
+    @RequestMapping(value = "media/callback/error", consumes = JSON_APPLICATION)
     public void notifyCallbackError(@RequestBody AddMediaResponse notifyRequest) {
         LOGGER.info("notifyCallbackError: {}", notifyRequest);
     }
 
-    @RequestMapping(value = "media/callback/upload", consumes = JSON_APPLICATION, produces = JSON_APPLICATION)
+    @RequestMapping(value = "media/callback/upload", consumes = JSON_APPLICATION)
     public void notifyCallbackUpload(@RequestBody AddMediaResponse notifyRequest) {
         LOGGER.info("notifyCallbackUpload: {}", notifyRequest);
     }
