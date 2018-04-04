@@ -48,12 +48,32 @@
             <set />
           </value>
         </entry>
+        <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/java/net/mbc/platform/vam/common/MediaStatusEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/java/net/mbc/platform/vam/common/NotifyStatusEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/java/net/mbc/platform/vam/encoding/request/NotifyCallbackRequest.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/java/net/mbc/platform/vam/encoding/response/AddMediaResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/java/net/mbc/platform/vam/encoding/response/NotifyEncodingResult.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/java/net/mbc/platform/vam/encoding/response/NotifyResponse.java">
           <value>
             <set />
           </value>

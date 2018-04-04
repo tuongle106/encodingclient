@@ -1,9 +1,11 @@
 package com.linecorp.sample.login.application.controller;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Map;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AddMediaResponse {
     private String mediaid;
     private String source;
