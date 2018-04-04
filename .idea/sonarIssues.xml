@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linecorp/sample/login/application/controller/AddMediaResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/linecorp/sample/login/infra/line/api/v2/LineAPI.java">
           <value>
             <set />
@@ -38,7 +43,17 @@
             <set />
           </value>
         </entry>
+        <entry key="/Volumes/DATA/MBC/source/dam-service/app/src/main/resources/application.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/Volumes/DATA/MBC/source/dam-service/rest/src/main/java/net/mbc/platform/vam/api/EncodingCallbackApi.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Volumes/DATA/MBC/source/dam-service/rest/src/main/java/net/mbc/platform/vam/response/AddMediaResponse.java">
           <value>
             <set />
           </value>
