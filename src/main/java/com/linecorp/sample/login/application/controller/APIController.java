@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
@@ -32,25 +32,25 @@ import java.net.URLDecoder;
 public class APIController {
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
 
-    @PostMapping(value = "media/callback/notify")
-    public void notifyCallback(@RequestBody String json) {
+    @PostMapping(value = "notifications/encoding/notify")
+    public void notifyCallback(@RequestParam("json") String json) {
         LOGGER.info("notifyCallback: {}", json);
     }
 
-    @PostMapping(value = "media/callback/error")
-    public void notifyCallbackError(@RequestBody String json) {
+    @PostMapping(value = "notifications/encoding/error")
+    public void notifyCallbackError(@RequestParam("json") String json) {
         LOGGER.info("notifyCallbackError: {}", json);
     }
 
-    @PostMapping(value = "media/callback/upload")
-    public void notifyCallbackUpload(@RequestBody String json) {
+    @PostMapping(value = "notifications/encoding/upload")
+    public void notifyCallbackUpload(@RequestParam("json") String json) {
         LOGGER.info("notifyCallbackUpload: {}", json);
     }
 
     public static void main(String[] args) {
 
         ObjectMapper objectMapper = new ObjectMapper();
-        String encoded = "%7B%22result%22%3A%7B%22mediaid%22%3A%22166112948%22%2C%22source%22%3A%22https%3A%5C%2F%5C%2Fvamvideos.s3.amazonaws.com%5C%2F2018%5C%2F02%5C%2F06%5C%2Fstep.mov%22%2C%22status%22%3A%22Error%22%2C%22description%22%3A%22No+tasks+are+completed%22%2C%22encodinghost%22%3A%22http%3A%5C%2F%5C%2Fmanage.encoding.com%5C%2F%22%2C%22format%22%3A%7B%22taskid%22%3A%22572462435%22%2C%22output%22%3A%22advanced_hls%22%2C%22status%22%3A%22Error%22%2C%22description%22%3A%22ECOM00269%3A+Audio+extraction+failed%22%2C%22suggestion%22%3A%22Our+decoder+could+not+extract+audio+stream+from+your+source+file.+%22%7D%7D%7D";
+        String encoded = "%7B%22result%22%3A%7B%22mediaid%22%3A%22167456906%22%2C%22taskid%22%3A%22576606884%22%2C%22destination%22%3A%22http%3A%5C%2F%5C%2FAKIAISOZSGN3XXLJYCTA%3AQrajP2X9eczVTAo847hBTlw9m9h22F86l1UR06%252Fd%40vamvideos.s3.amazonaws.com%5C%2Fhls%5C%2F2018%5C%2F04%5C%2F13%5C%2FJustin%252BBieber%252B-%252BOne%252BTime_576606884-0.m3u8%22%2C%22status%22%3A%22Saved%22%7D%7D";
         try {
             String decoded = URLDecoder.decode(encoded, "UTF-8");
             System.out.print("S2: " + decoded);
