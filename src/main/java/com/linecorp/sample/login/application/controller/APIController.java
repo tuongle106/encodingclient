@@ -31,26 +31,27 @@ import java.net.URLDecoder;
 @RestController
 public class APIController {
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
+    private static final String JSON_ENCODING_FORMAT = "json";
 
     @PostMapping(value = "notifications/encoding/notify")
-    public void notifyCallback(@RequestParam("json") final EncodingResult json) {
+    public void notifyCallback(@RequestParam(JSON_ENCODING_FORMAT) final String json) {
         LOGGER.info("notifyCallback: {}", json);
     }
 
     @PostMapping(value = "notifications/encoding/error")
-    public void notifyCallbackError(@RequestParam("json") final EncodingResult json) {
+    public void notifyCallbackError(@RequestParam(JSON_ENCODING_FORMAT) final String json) {
         LOGGER.info("notifyCallbackError: {}", json);
     }
 
     @PostMapping(value = "notifications/encoding/upload")
-    public void notifyCallbackUpload(@RequestParam("json") final EncodingResult json) {
+    public void notifyCallbackUpload(@RequestParam(JSON_ENCODING_FORMAT) final String json) {
         LOGGER.info("notifyCallbackUpload: {}", json);
     }
 
     public static void main(String[] args) {
 
         ObjectMapper objectMapper = new ObjectMapper();
-        String encoded = "%7B%22result%22%3A%7B%22mediaid%22%3A%22167456906%22%2C%22taskid%22%3A%22576606884%22%2C%22destination%22%3A%22http%3A%5C%2F%5C%2FAKIAISOZSGN3XXLJYCTA%3AQrajP2X9eczVTAo847hBTlw9m9h22F86l1UR06%252Fd%40vamvideos.s3.amazonaws.com%5C%2Fhls%5C%2F2018%5C%2F04%5C%2F13%5C%2FJustin%252BBieber%252B-%252BOne%252BTime_576606884-0.m3u8%22%2C%22status%22%3A%22Saved%22%7D%7D";
+        String encoded = "{\"result\":{\"mediaid\":\"167461400\",\"taskid\":\"576667049\",\"destination\":\"http:\\/\\/AKIAISOZSGN3XXLJYCTA:QrajP2X9eczVTAo847hBTlw9m9h22F86l1UR06%2Fd@vamvideos.s3.amazonaws.com\\/hls\\/2018\\/04\\/13\\/Justin%2BBieber%2B-%2BOne%2BTime_576667049-0.m3u8\",\"status\":\"Saved\"}}";
         try {
             String decoded = URLDecoder.decode(encoded, "UTF-8");
             System.out.print("S2: " + decoded);
