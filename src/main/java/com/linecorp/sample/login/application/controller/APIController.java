@@ -33,17 +33,17 @@ public class APIController {
     private static final Logger LOGGER = LoggerFactory.getLogger(APIController.class);
 
     @PostMapping(value = "notifications/encoding/notify")
-    public void notifyCallback(@RequestParam("json") String json) {
+    public void notifyCallback(@RequestParam("json") final EncodingResult json) {
         LOGGER.info("notifyCallback: {}", json);
     }
 
     @PostMapping(value = "notifications/encoding/error")
-    public void notifyCallbackError(@RequestParam("json") String json) {
+    public void notifyCallbackError(@RequestParam("json") final EncodingResult json) {
         LOGGER.info("notifyCallbackError: {}", json);
     }
 
     @PostMapping(value = "notifications/encoding/upload")
-    public void notifyCallbackUpload(@RequestParam("json") String json) {
+    public void notifyCallbackUpload(@RequestParam("json") final EncodingResult json) {
         LOGGER.info("notifyCallbackUpload: {}", json);
     }
 
